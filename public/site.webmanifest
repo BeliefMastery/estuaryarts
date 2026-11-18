@@ -1,0 +1,9 @@
+{
+  "name": "Estuary Arts",
+  "short_name": "Estuary Arts",
+  "description": "Glass Art and Paint Landscapes — Studio and Gallery by Rosie and Bruce in Parapara, Tasman, New Zealand.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#E3783E"
+}
