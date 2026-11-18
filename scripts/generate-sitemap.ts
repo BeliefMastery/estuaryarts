@@ -31,7 +31,29 @@ ${urls}
   fs.writeFileSync(path.join(OUT_DIR, "sitemap.xml"), xml, "utf-8");
   fs.writeFileSync(path.join(PUBLIC_DIR, "sitemap.xml"), xml, "utf-8");
 
-  const robots = `User-agent: *
+  const robots = `# Estuary Arts — ${SITE_URL}/
+# Glass Art and Paint Landscapes · Parapara, Golden Bay, Tasman, New Zealand
+# Discovery: /llms.txt · /humans.txt · /sitemap.xml
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml

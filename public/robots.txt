@@ -1,4 +1,26 @@
+# Estuary Arts — https://www.estuaryarts.co.nz/
+# Glass Art and Paint Landscapes · Parapara, Golden Bay, Tasman, New Zealand
+# Discovery: /llms.txt · /humans.txt · /sitemap.xml
+
 User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://www.estuaryarts.co.nz/sitemap.xml

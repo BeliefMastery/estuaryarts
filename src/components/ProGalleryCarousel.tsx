@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { ArtworkItem } from "@/lib/gallery-data";
 import LightboxModal from "./LightboxModal";
+import OptimizedImage from "./OptimizedImage";
 
 interface ProGalleryCarouselProps {
   items: ArtworkItem[];
@@ -58,15 +59,28 @@ export default function ProGalleryCarousel({ items, ariaLabel }: ProGalleryCarou
             </svg>
           </button>
 
-          <button
-            type="button"
-            className="carousel-slide-btn"
-            aria-label="Open artwork in fullscreen viewer"
-            onClick={() => setLightboxIndex(currentIndex)}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={current.src} alt={current.alt} className="carousel-image" />
-          </button>
+          {items.map((item, idx) => {
+            const isActive = idx === currentIndex;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                className={`carousel-slide-btn${isActive ? " active" : ""}`}
+                aria-hidden={!isActive}
+                tabIndex={isActive ? 0 : -1}
+                aria-label={`View ${item.alt}`}
+                onClick={() => setLightboxIndex(idx)}
+              >
+                <OptimizedImage
+                  src={item.src}
+                  alt={item.alt}
+                  className="carousel-image"
+                  sizes="(max-width: 940px) 100vw, 940px"
+                  priority={idx === 0}
+                />
+              </button>
+            );
+          })}
 
           <button
             type="button"

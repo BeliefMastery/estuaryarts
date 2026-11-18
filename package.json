@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "optimize-images": "tsx scripts/optimize-images.ts",
+    "prebuild": "tsx scripts/optimize-images.ts",
     "postbuild": "tsx scripts/generate-sitemap.ts"
   },
   "dependencies": {
@@ -21,6 +23,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "^15.5.0",
+    "sharp": "^0.35.5",
     "tsx": "^4.19.0",
     "typescript": "^5"
   }

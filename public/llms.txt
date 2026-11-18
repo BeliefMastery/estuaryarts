@@ -1,17 +1,23 @@
 # Estuary Arts
-> Glass Art and Paint Landscapes · Parapara, Tasman 7182, New Zealand
+> Glass Art and Paint Landscapes · Parapara, Golden Bay, Tasman 7182, New Zealand
 
-Estuary Arts is an art studio and gallery in Parapara, Golden Bay, Tasman, New Zealand, by Rosie Little (dramatic acrylic and oil landscape paintings) and Bruce (kilnformed glass art pieces).
+Estuary Arts is an art studio and spacious gallery in Parapara, Golden Bay, Tasman, New Zealand, showcasing original works created in the studios by Rosie Little and Bruce, inspired by the surrounding natural environment.
+
+## Artists & Media
+- **Paintings (Rosie Little)**: Dramatic acrylic and oil landscape paintings.
+- **Glass (Bruce)**: Kilnformed glass art pieces, triptychs, platters, and architectural wall tiles.
 
 ## Opening Hours
 Open Wed–Sun, October to end of April.
+Look for the corten steel "ESTUARY ARTS" metal sign at the roadside entrance.
 
 ## Pages
-- Home: https://www.estuaryarts.co.nz/
-- Painting (Selected Work): https://www.estuaryarts.co.nz/selected-work-1/
-- Glass (Selected Work): https://www.estuaryarts.co.nz/selected-work/
+- Home (`/`): Studio introduction, Glass Art carousel (9 works), Painting carousel (7 works), Contact form, and Parapara location map — https://www.estuaryarts.co.nz/
+- Painting (`/selected-work-1/`): Selected Work gallery of 8 paintings by Rosie Little — https://www.estuaryarts.co.nz/selected-work-1/
+- Glass (`/selected-work/`): Selected Work gallery of 9 kilnformed glass pieces — https://www.estuaryarts.co.nz/selected-work/
 
 ## Contact
 - Address: Estuary Arts, Parapara, TASMAN 7182, New Zealand
 - Email: estuaryarts@gmail.com
 - Phone: 006435248466 (+64 3 524 8466)
+- Sitemap: https://www.estuaryarts.co.nz/sitemap.xml

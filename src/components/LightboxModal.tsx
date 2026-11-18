@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import type { ArtworkItem } from "@/lib/gallery-data";
+import OptimizedImage from "./OptimizedImage";
 
 interface LightboxModalProps {
   items: ArtworkItem[];
@@ -71,8 +72,13 @@ export default function LightboxModal({
           </svg>
         </button>
 
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={current.src} alt={current.alt} className="lightbox-img" />
+        <OptimizedImage
+          src={current.src}
+          alt={current.alt}
+          className="lightbox-img"
+          sizes="100vw"
+          priority
+        />
 
         <button
           type="button"

@@ -1,5 +1,6 @@
 import ProGalleryCarousel from "@/components/ProGalleryCarousel";
 import ContactSection from "@/components/ContactSection";
+import OptimizedImage from "@/components/OptimizedImage";
 import {
   GLASS_ARTWORKS,
   HERO_CONTENT,
@@ -13,11 +14,12 @@ export default function HomePage() {
         <div className="container-980">
           <div className="hero-grid">
             <div className="hero-image-wrap">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <OptimizedImage
                 src={HERO_CONTENT.coverImage.src}
                 alt={HERO_CONTENT.coverImage.alt}
                 className="hero-image"
+                sizes="(max-width: 900px) 100vw, 440px"
+                priority
               />
             </div>
 

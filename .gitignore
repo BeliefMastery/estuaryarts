@@ -35,5 +35,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# generated image variants (npm run optimize-images / prebuild)
+public/images/**/*.webp
+public/images/**/*-opt.jpg
+src/lib/image-manifest.json
+
 # generated at postbuild
 public/sitemap.xml

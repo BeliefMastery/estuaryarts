@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { ArtworkItem } from "@/lib/gallery-data";
 import LightboxModal from "./LightboxModal";
+import OptimizedImage from "./OptimizedImage";
 
 interface GalleryGridProps {
   items: ArtworkItem[];
@@ -25,8 +26,12 @@ export default function GalleryGrid({ items, variant, ariaLabel }: GalleryGridPr
               aria-label={`View ${item.alt}`}
               onClick={() => setLightboxIndex(idx)}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={item.src} alt={item.alt} />
+              <OptimizedImage
+                src={item.src}
+                alt={item.alt}
+                sizes="(max-width: 900px) 50vw, 25vw"
+                priority={idx < 4}
+              />
             </button>
           ))}
         </div>
@@ -53,8 +58,12 @@ export default function GalleryGrid({ items, variant, ariaLabel }: GalleryGridPr
               aria-label={`View ${item.alt}`}
               onClick={() => setLightboxIndex(idx)}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={item.src} alt={item.alt} />
+              <OptimizedImage
+                src={item.src}
+                alt={item.alt}
+                sizes="(max-width: 600px) 100vw, 455px"
+                priority={idx < 2}
+              />
             </button>
           ))}
         </div>
