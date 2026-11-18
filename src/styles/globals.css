@@ -309,15 +309,13 @@ img {
 .contact-card {
   background-color: var(--bg-charcoal);
   padding: 64px 56px;
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 48px;
-  align-items: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
   text-align: center;
-  padding-top: 12px;
 }
 
 .contact-heading {
@@ -337,89 +335,18 @@ img {
   margin: 0 0 18px;
 }
 
+.contact-detail:last-child {
+  margin-bottom: 0;
+}
+
 .contact-detail a:hover {
   text-decoration: underline;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.contact-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.form-input,
-.form-textarea {
-  width: 100%;
-  background-color: var(--bg-black);
-  color: var(--text-white);
-  border: 1px solid var(--text-white);
-  border-radius: 0;
-  padding: 10px 14px;
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.4;
-  outline: none;
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-  color: #a3a3a3;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--accent-terracotta);
-}
-
-.form-input.input-error,
-.form-textarea.input-error {
-  border-color: var(--error-red);
-}
-
-.form-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.form-submit-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 16px;
-  margin-top: 4px;
-}
-
-.form-submit-btn {
-  background-color: var(--text-white);
-  color: var(--bg-black);
-  border: 2px solid var(--bg-black);
-  border-radius: 0;
-  font-family: var(--font-submit);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.4;
-  padding: 10px 36px;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-}
-
-.form-submit-btn:hover {
-  opacity: 0.9;
-}
-
-.form-status {
-  font-size: 13px;
-  color: var(--text-offwhite);
-}
-
-.form-status.error {
-  color: var(--error-red);
+.contact-email-link {
+  color: var(--accent-terracotta);
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .map-wrapper {
@@ -634,7 +561,6 @@ img {
   }
 
   .contact-card {
-    grid-template-columns: 1fr;
     padding: 40px 24px;
   }
 
